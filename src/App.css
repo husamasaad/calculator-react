@@ -51,6 +51,17 @@ body {
   border-radius: 1rem;
 }
 
+@media (max-width: 767px) {
+  .calculator-grid {
+    grid-template-columns: repeat(4, 4rem);
+    grid-template-rows: minmax(10rem, auto) repeat(5, 4rem);
+  }
+
+  .calculator-grid button {
+    font-size: 1rem;
+  }
+}
+
 .calculator-grid .op-btn {
   background-color: #005DB2;
   color: rgba(255, 255, 255, .9);
